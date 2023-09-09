@@ -23,8 +23,8 @@ class WeatherService: WeatherServiceDelegate {
                     // Handle network error at service layer if needed
                     completion(.failure(error))
 
-                case let .success(organizations):
-                    completion(.success(organizations))
+                case let .success(weather):
+                    completion(.success(weather))
             }
         }
     }
