@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */; };
+		9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */; };
+		9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C62AAC7A14000B03C4 /* Assets.xcassets */; };
+		9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */; };
+		9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */; };
+		9FF204DF2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */; };
+		9FF204E12AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */; };
+		9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */; };
+		9FF204F22AAC7B85000B03C4 /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FF204D12AAC7A14000B03C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF204B22AAC7A13000B03C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF204B92AAC7A13000B03C4;
+			remoteInfo = "Morsy-Weather";
+		};
+		9FF204DB2AAC7A14000B03C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FF204B22AAC7A13000B03C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FF204B92AAC7A13000B03C4;
+			remoteInfo = "Morsy-Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9FF204BA2AAC7A13000B03C4 /* Morsy-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Morsy-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9FF204C62AAC7A14000B03C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FF204C92AAC7A14000B03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9FF204CB2AAC7A14000B03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FF204D02AAC7A14000B03C4 /* Morsy-WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherTests.swift; sourceTree = "<group>"; };
+		9FF204DA2AAC7A14000B03C4 /* Morsy-WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITests.swift; sourceTree = "<group>"; };
+		9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
+		9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FF204B72AAC7A13000B03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204CD2AAC7A14000B03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204D72AAC7A14000B03C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9FF204B12AAC7A13000B03C4 = {
+			isa = PBXGroup;
+			children = (
+				9FF204BC2AAC7A13000B03C4 /* Morsy-Weather */,
+				9FF204D32AAC7A14000B03C4 /* Morsy-WeatherTests */,
+				9FF204DD2AAC7A14000B03C4 /* Morsy-WeatherUITests */,
+				9FF204BB2AAC7A13000B03C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9FF204BB2AAC7A13000B03C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204BA2AAC7A13000B03C4 /* Morsy-Weather.app */,
+				9FF204D02AAC7A14000B03C4 /* Morsy-WeatherTests.xctest */,
+				9FF204DA2AAC7A14000B03C4 /* Morsy-WeatherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FF204BC2AAC7A13000B03C4 /* Morsy-Weather */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204ED2AAC7B31000B03C4 /* Module */,
+				9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */,
+				9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */,
+				9FF204C62AAC7A14000B03C4 /* Assets.xcassets */,
+				9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */,
+				9FF204CB2AAC7A14000B03C4 /* Info.plist */,
+			);
+			path = "Morsy-Weather";
+			sourceTree = "<group>";
+		};
+		9FF204D32AAC7A14000B03C4 /* Morsy-WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */,
+			);
+			path = "Morsy-WeatherTests";
+			sourceTree = "<group>";
+		};
+		9FF204DD2AAC7A14000B03C4 /* Morsy-WeatherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */,
+				9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */,
+			);
+			path = "Morsy-WeatherUITests";
+			sourceTree = "<group>";
+		};
+		9FF204ED2AAC7B31000B03C4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204EE2AAC7B3D000B03C4 /* Temperature */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9FF204EE2AAC7B3D000B03C4 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */,
+				9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FF204B92AAC7A13000B03C4 /* Morsy-Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF204E42AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-Weather" */;
+			buildPhases = (
+				9FF204B62AAC7A13000B03C4 /* Sources */,
+				9FF204B72AAC7A13000B03C4 /* Frameworks */,
+				9FF204B82AAC7A13000B03C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Morsy-Weather";
+			productName = "Morsy-Weather";
+			productReference = 9FF204BA2AAC7A13000B03C4 /* Morsy-Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FF204CF2AAC7A14000B03C4 /* Morsy-WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF204E72AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-WeatherTests" */;
+			buildPhases = (
+				9FF204CC2AAC7A14000B03C4 /* Sources */,
+				9FF204CD2AAC7A14000B03C4 /* Frameworks */,
+				9FF204CE2AAC7A14000B03C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FF204D22AAC7A14000B03C4 /* PBXTargetDependency */,
+			);
+			name = "Morsy-WeatherTests";
+			productName = "Morsy-WeatherTests";
+			productReference = 9FF204D02AAC7A14000B03C4 /* Morsy-WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9FF204D92AAC7A14000B03C4 /* Morsy-WeatherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FF204EA2AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-WeatherUITests" */;
+			buildPhases = (
+				9FF204D62AAC7A14000B03C4 /* Sources */,
+				9FF204D72AAC7A14000B03C4 /* Frameworks */,
+				9FF204D82AAC7A14000B03C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FF204DC2AAC7A14000B03C4 /* PBXTargetDependency */,
+			);
+			name = "Morsy-WeatherUITests";
+			productName = "Morsy-WeatherUITests";
+			productReference = 9FF204DA2AAC7A14000B03C4 /* Morsy-WeatherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FF204B22AAC7A13000B03C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					9FF204B92AAC7A13000B03C4 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					9FF204CF2AAC7A14000B03C4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9FF204B92AAC7A13000B03C4;
+					};
+					9FF204D92AAC7A14000B03C4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 9FF204B92AAC7A13000B03C4;
+					};
+				};
+			};
+			buildConfigurationList = 9FF204B52AAC7A13000B03C4 /* Build configuration list for PBXProject "Morsy-Weather" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FF204B12AAC7A13000B03C4;
+			productRefGroup = 9FF204BB2AAC7A13000B03C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FF204B92AAC7A13000B03C4 /* Morsy-Weather */,
+				9FF204CF2AAC7A14000B03C4 /* Morsy-WeatherTests */,
+				9FF204D92AAC7A14000B03C4 /* Morsy-WeatherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FF204B82AAC7A13000B03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */,
+				9FF204F22AAC7B85000B03C4 /* TemperatureViewController.xib in Resources */,
+				9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204CE2AAC7A14000B03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204D82AAC7A14000B03C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FF204B62AAC7A13000B03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */,
+				9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */,
+				9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204CC2AAC7A14000B03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FF204D62AAC7A14000B03C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FF204E12AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift in Sources */,
+				9FF204DF2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FF204D22AAC7A14000B03C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FF204B92AAC7A13000B03C4 /* Morsy-Weather */;
+			targetProxy = 9FF204D12AAC7A14000B03C4 /* PBXContainerItemProxy */;
+		};
+		9FF204DC2AAC7A14000B03C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FF204B92AAC7A13000B03C4 /* Morsy-Weather */;
+			targetProxy = 9FF204DB2AAC7A14000B03C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FF204C92AAC7A14000B03C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FF204E22AAC7A14000B03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9FF204E32AAC7A14000B03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FF204E52AAC7A14000B03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Morsy-Weather/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FF204E62AAC7A14000B03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Morsy-Weather/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9FF204E82AAC7A14000B03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morsy-Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morsy-Weather";
+			};
+			name = Debug;
+		};
+		9FF204E92AAC7A14000B03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Morsy-Weather.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Morsy-Weather";
+			};
+			name = Release;
+		};
+		9FF204EB2AAC7A14000B03C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Morsy-Weather";
+			};
+			name = Debug;
+		};
+		9FF204EC2AAC7A14000B03C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3RN592736K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Morsy-WeatherUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Morsy-Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FF204B52AAC7A13000B03C4 /* Build configuration list for PBXProject "Morsy-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF204E22AAC7A14000B03C4 /* Debug */,
+				9FF204E32AAC7A14000B03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FF204E42AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF204E52AAC7A14000B03C4 /* Debug */,
+				9FF204E62AAC7A14000B03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FF204E72AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF204E82AAC7A14000B03C4 /* Debug */,
+				9FF204E92AAC7A14000B03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FF204EA2AAC7A14000B03C4 /* Build configuration list for PBXNativeTarget "Morsy-WeatherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FF204EB2AAC7A14000B03C4 /* Debug */,
+				9FF204EC2AAC7A14000B03C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9FF204B22AAC7A13000B03C4 /* Project object */;
+}
