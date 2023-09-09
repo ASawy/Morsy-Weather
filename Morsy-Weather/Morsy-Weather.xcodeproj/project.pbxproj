@@ -112,11 +112,8 @@
 				9FF204ED2AAC7B31000B03C4 /* Module */,
 				9FF204F32AAC8928000B03C4 /* Network */,
 				9FF204F82AAC89DA000B03C4 /* Helper */,
-				9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */,
-				9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */,
-				9FF204C62AAC7A14000B03C4 /* Assets.xcassets */,
-				9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */,
-				9FF204CB2AAC7A14000B03C4 /* Info.plist */,
+				9FF205022AAC9235000B03C4 /* App */,
+				9FF205032AAC923E000B03C4 /* Resources */,
 			);
 			path = "Morsy-Weather";
 			sourceTree = "<group>";
@@ -172,6 +169,25 @@
 				9FF204FB2AAC8A1D000B03C4 /* Constant.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		9FF205022AAC9235000B03C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */,
+				9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */,
+				9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */,
+				9FF204CB2AAC7A14000B03C4 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FF205032AAC923E000B03C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204C62AAC7A14000B03C4 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
