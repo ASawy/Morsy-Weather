@@ -23,6 +23,7 @@
 		9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204FF2AAC8F68000B03C4 /* NetworkError.swift */; };
 		9FF205072AAC94AC000B03C4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205062AAC94AC000B03C4 /* Weather.swift */; };
 		9FF205092AAC94D9000B03C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205082AAC94D9000B03C4 /* Location.swift */; };
+		9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050B2AACA159000B03C4 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		9FF204FF2AAC8F68000B03C4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		9FF205062AAC94AC000B03C4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9FF205082AAC94D9000B03C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9FF2050B2AACA159000B03C4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF204ED2AAC7B31000B03C4 /* Module */,
+				9FF2050A2AACA126000B03C4 /* Service */,
 				9FF205042AAC9362000B03C4 /* Model */,
 				9FF204F32AAC8928000B03C4 /* Network */,
 				9FF204F82AAC89DA000B03C4 /* Helper */,
@@ -202,6 +205,14 @@
 				9FF205082AAC94D9000B03C4 /* Location.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9FF2050A2AACA126000B03C4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2050B2AACA159000B03C4 /* WeatherService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +348,7 @@
 			files = (
 				9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */,
 				9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */,
+				9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */,
 				9FF205092AAC94D9000B03C4 /* Location.swift in Sources */,
 				9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */,
 				9FF204FE2AAC8F45000B03C4 /* HTTPMethod.swift in Sources */,
