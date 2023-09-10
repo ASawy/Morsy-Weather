@@ -11,6 +11,17 @@ enum MeasurementUnits: String {
     case metric    // For temperature in Celsius
     case imperial  // For temperature in Fahrenheit
     case standard  // For temperature in Kelvin, default value
+
+    var displayUnit: String {
+        switch self {
+            case .metric:
+                return "C"
+            case .imperial:
+                return "F"
+            case .standard:
+                return "K"
+        }
+    }
 }
 
 protocol WeatherServiceDelegate {

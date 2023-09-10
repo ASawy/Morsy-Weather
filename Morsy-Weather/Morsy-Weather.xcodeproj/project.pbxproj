@@ -25,6 +25,8 @@
 		9FF205092AAC94D9000B03C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205082AAC94D9000B03C4 /* Location.swift */; };
 		9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050B2AACA159000B03C4 /* WeatherService.swift */; };
 		9FF2050E2AACC26C000B03C4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050D2AACC26C000B03C4 /* LocationService.swift */; };
+		9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */; };
+		9FF205132AAE0E4D000B03C4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		9FF205082AAC94D9000B03C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		9FF2050B2AACA159000B03C4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		9FF2050D2AACC26C000B03C4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePresenter.swift; sourceTree = "<group>"; };
+		9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		9FF204BC2AAC7A13000B03C4 /* Morsy-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				9FF205112AAE0E3E000B03C4 /* Coordinators */,
 				9FF204ED2AAC7B31000B03C4 /* Module */,
 				9FF2050A2AACA126000B03C4 /* Service */,
 				9FF205042AAC9362000B03C4 /* Model */,
@@ -157,6 +162,7 @@
 		9FF204EE2AAC7B3D000B03C4 /* Temperature */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */,
 				9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */,
 				9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */,
 			);
@@ -216,6 +222,14 @@
 				9FF2050D2AACC26C000B03C4 /* LocationService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		9FF205112AAE0E3E000B03C4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */,
 				9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */,
 				9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */,
 				9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */,
@@ -361,6 +376,7 @@
 				9FF204F52AAC896C000B03C4 /* NetworkClient.swift in Sources */,
 				9FF2050E2AACC26C000B03C4 /* LocationService.swift in Sources */,
 				9FF204FC2AAC8A1D000B03C4 /* Constant.swift in Sources */,
+				9FF205132AAE0E4D000B03C4 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
