@@ -6,7 +6,7 @@
 //
 
 enum RequestConfiguration {
-    case weatherForLocation(lat: Double, lon: Double)
+    case weatherForLocation(lat: Double, lon: Double, unit: String)
     case searchForLocations(keyword: String, limit: Int)
 }
 
@@ -14,8 +14,8 @@ enum RequestConfiguration {
 extension RequestConfiguration {
     var path: String {
         switch self {
-            case let .weatherForLocation(lat, lon):
-                return "data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(Constant.weatherAPIKey)"
+            case let .weatherForLocation(lat, lon, unit):
+                return "data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(Constant.weatherAPIKey)&units=\(unit)"
 
             case let .searchForLocations(keyword, limit):
                 return "geo/1.0/direct?q=\(keyword)&limit=\(limit)&appid=\(Constant.weatherAPIKey)"
