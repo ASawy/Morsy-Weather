@@ -10,8 +10,8 @@ import Foundation
 typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> Void
 
 class NetworkClient {
-    class func request<T: Decodable>(_ config: RequestConfiguration, completion: @escaping CompletionHandler<T>) {
-        guard let url = URL(string: config.baseURL + config.path) else { return }
+    class func request<T: Decodable>(_ config: RequestConfiguration, completion: @escaping CompletionHandler<T>) -> URLSessionDataTask? {
+        guard let url = URL(string: config.baseURL + config.path) else { return nil }
 
         var request = URLRequest(url: url)
         request.httpMethod = config.method.rawValue
@@ -27,7 +27,7 @@ class NetworkClient {
                 request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])
             } catch {
                 completion(.failure(NetworkError.requestFailed))
-                return
+                return nil
             }
         }
 
@@ -57,5 +57,6 @@ class NetworkClient {
         }
 
         task.resume()
+        return task
     }
 }

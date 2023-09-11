@@ -20,6 +20,7 @@ class LocationService: NSObject, LocationServiceDelegate {
     // MARK: Properties
     private let locationManager = CLLocationManager()
     private var completion: CompletionBlock?
+    private var previousDataTask: URLSessionDataTask?
 
     // MARK: Functions
     func getCurrentLocation(completion: @escaping CompletionBlock) {
@@ -33,7 +34,9 @@ class LocationService: NSObject, LocationServiceDelegate {
     func searchForLocations(keyword: String,
                             limit: Int,
                             completion: @escaping (Result<[Location], Error>) -> Void) {
-        NetworkClient.request(.searchForLocations(keyword: keyword, limit: limit)) { (result: Result<[Location], Error>) in
+
+        previousDataTask?.cancel() // cancel previous call if it exists
+        previousDataTask = NetworkClient.request(.searchForLocations(keyword: keyword, limit: limit)) { (result: Result<[Location], Error>) in
             switch result {
                 case let .failure(error):
                     // Handle network error at service layer if needed

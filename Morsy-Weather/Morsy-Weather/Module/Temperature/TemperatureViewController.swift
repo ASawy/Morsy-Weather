@@ -40,12 +40,17 @@ class TemperatureViewController: UIViewController {
         super.viewDidLoad()
 
         presenter.configure(with: self)
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         presenter.getWeatherForCurrentLocation()
     }
 
     // MARK: User Actions
-    @IBAction func selectDifferentLocation(_ sender: Any) {
+    @IBAction private func selectDifferentLocation(_ sender: Any) {
+        presenter.selectDifferentLocation()
     }
 }
 

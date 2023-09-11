@@ -27,6 +27,10 @@
 		9FF2050E2AACC26C000B03C4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050D2AACC26C000B03C4 /* LocationService.swift */; };
 		9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */; };
 		9FF205132AAE0E4D000B03C4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */; };
+		9FF205182AAE653B000B03C4 /* SearchForLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */; };
+		9FF205192AAE653B000B03C4 /* SearchForLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */; };
+		9FF2051B2AAE654B000B03C4 /* SearchForLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */; };
+		9FF205222AAF2E17000B03C4 /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		9FF2050D2AACC26C000B03C4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePresenter.swift; sourceTree = "<group>"; };
 		9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationViewController.swift; sourceTree = "<group>"; };
+		9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchForLocationViewController.xib; sourceTree = "<group>"; };
+		9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationPresenter.swift; sourceTree = "<group>"; };
+		9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF204EE2AAC7B3D000B03C4 /* Temperature */,
+				9FF205152AAE651B000B03C4 /* SearchForLocation */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -230,6 +239,25 @@
 				9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		9FF205152AAE651B000B03C4 /* SearchForLocation */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */,
+				9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */,
+				9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */,
+				9FF2051C2AAF13ED000B03C4 /* Cell */,
+			);
+			path = SearchForLocation;
+			sourceTree = "<group>";
+		};
+		9FF2051C2AAF13ED000B03C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */,
+				9FF205192AAE653B000B03C4 /* SearchForLocationViewController.xib in Resources */,
 				9FF204F22AAC7B85000B03C4 /* TemperatureViewController.xib in Resources */,
 				9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */,
 			);
@@ -365,12 +394,15 @@
 			files = (
 				9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */,
 				9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */,
+				9FF2051B2AAE654B000B03C4 /* SearchForLocationPresenter.swift in Sources */,
 				9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */,
 				9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */,
 				9FF205092AAC94D9000B03C4 /* Location.swift in Sources */,
+				9FF205182AAE653B000B03C4 /* SearchForLocationViewController.swift in Sources */,
 				9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */,
 				9FF204FE2AAC8F45000B03C4 /* HTTPMethod.swift in Sources */,
 				9FF205072AAC94AC000B03C4 /* Weather.swift in Sources */,
+				9FF205222AAF2E17000B03C4 /* LocationCollectionViewCell.swift in Sources */,
 				9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */,
 				9FF204F72AAC8991000B03C4 /* RequestConfiguration.swift in Sources */,
 				9FF204F52AAC896C000B03C4 /* NetworkClient.swift in Sources */,

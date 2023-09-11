@@ -9,6 +9,7 @@ import Foundation
 import CoreLocation
 
 protocol TemperaturePresenterCoordinator: AnyObject {
+    func navigateToSearchForLocationView()
 }
 
 protocol TemperatureViewDelegate: AnyObject {
@@ -48,6 +49,7 @@ class TemperaturePresenter {
     func getWeatherForCurrentLocation() {
         viewDelegate?.hideErrorView()
         viewDelegate?.showLoadingIndicator()
+
         locationService.getCurrentLocation { [weak self] result in
             guard let self = self else { return }
 
@@ -62,6 +64,21 @@ class TemperaturePresenter {
                     }
             }
         }
+    }
+
+    func getWeatherForLocation(_ location: Location) {
+        guard let latitude = location.lat,
+              let longitude = location.lon else { return }
+
+        let locationCoordinate = CLLocationCoordinate2D(latitude: latitude,
+                                                        longitude: longitude)
+        viewDelegate?.showLoadingIndicator()
+        getWeatherForLocation(locationCoordinate)
+    }
+
+    // MARK: User Actions
+    func selectDifferentLocation() {
+        coordinator.navigateToSearchForLocationView()
     }
 }
 
@@ -124,7 +141,7 @@ extension TemperaturePresenter {
     var visibility: String {
         guard let visibility = weather?.visibility else { return "" }
 
-        let visibilityKM = visibility / 100
+        let visibilityKM = visibility / 1000 // Convert the value to KM
         return "\(visibilityKM) KM"
     }
 
