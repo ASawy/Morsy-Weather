@@ -16,7 +16,7 @@ protocol LocationServiceDelegate {
                             completion: @escaping (Result<[Location], Error>) -> Void)
 }
 
-class LocationService: NSObject, LocationServiceDelegate {
+final class LocationService: NSObject, LocationServiceDelegate {
     // MARK: Properties
     private let locationManager = CLLocationManager()
     private var completion: CompletionBlock?

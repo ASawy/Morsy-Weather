@@ -15,7 +15,7 @@ protocol SearchForLocationViewDelegate: AnyObject {
     func updateView()
 }
 
-class SearchForLocationPresenter {
+final class SearchForLocationPresenter {
     // MARK: Constant
     private let searchCount = 10
 

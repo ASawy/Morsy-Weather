@@ -31,7 +31,7 @@ protocol WeatherServiceDelegate {
                                completion: @escaping (Result<Weather, Error>) -> Void)
 }
 
-class WeatherService: WeatherServiceDelegate {
+final class WeatherService: WeatherServiceDelegate {
     func getWeatherForLocation(lat: Double,
                                lon: Double,
                                unit: MeasurementUnits,

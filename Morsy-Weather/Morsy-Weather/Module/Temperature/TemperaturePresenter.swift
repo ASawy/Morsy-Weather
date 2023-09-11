@@ -20,7 +20,7 @@ protocol TemperatureViewDelegate: AnyObject {
     func hideErrorView()
 }
 
-class TemperaturePresenter {
+final class TemperaturePresenter {
     // MARK: Properties
     private unowned let coordinator: TemperaturePresenterCoordinator
     private weak var viewDelegate: TemperatureViewDelegate?

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TemperatureViewController: UIViewController {
+final class TemperatureViewController: UIViewController {
     // MARK: Outlets
     @IBOutlet private weak var errorLabel: UILabel!
     @IBOutlet private weak var headerLabel: UILabel!
@@ -44,7 +44,7 @@ class TemperatureViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         presenter.getWeatherForCurrentLocation()
     }
 

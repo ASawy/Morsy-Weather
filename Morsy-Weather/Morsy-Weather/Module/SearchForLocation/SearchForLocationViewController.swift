@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SearchForLocationViewController: UIViewController {
+final class SearchForLocationViewController: UIViewController {
     // MARK: Constant
     private let locationsCollectionViewCellIdentifier = "locationsCollectionViewCell"
 

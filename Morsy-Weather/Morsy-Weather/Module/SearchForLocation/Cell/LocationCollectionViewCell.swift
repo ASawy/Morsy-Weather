@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LocationCollectionViewCell: UICollectionViewCell {
+final class LocationCollectionViewCell: UICollectionViewCell {
     // MARK: Properties
     private let stackView: UIStackView = {
         let stackView = UIStackView()

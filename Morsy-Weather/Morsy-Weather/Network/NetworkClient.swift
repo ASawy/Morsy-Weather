@@ -9,7 +9,7 @@ import Foundation
 
 typealias CompletionHandler<T: Decodable> = (Result<T, Error>) -> Void
 
-class NetworkClient {
+final class NetworkClient {
     class func request<T: Decodable>(_ config: RequestConfiguration, completion: @escaping CompletionHandler<T>) -> URLSessionDataTask? {
         guard let url = URL(string: config.baseURL + config.path) else { return nil }
 
