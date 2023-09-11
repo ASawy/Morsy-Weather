@@ -13,6 +13,17 @@ I have decided to use **MVP-C** architecture, where:
 ## Unit Test
 I did unit test for **TemperaturePresenter** as *an example*. To achieve this, I created mock implementations for **WeatherService** and **LocationService** to simulate both successful and failed responses.
 
+## Git Flow
+I checked out the *develop* branch from the *master* branch and pushed all my changes to it because I am working alone. However, I used to use Git flow when working with a team.
+**Git flow:**
+- master branch.
+- develop branch.
+- feature branch.
+- task branch.
+- release branch.
+- hotfix branch.
+
+
 *If you have any questions, please do not hesitate to contact me.*
 
 
