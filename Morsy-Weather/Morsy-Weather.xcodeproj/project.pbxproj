@@ -11,7 +11,6 @@
 		9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */; };
 		9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C62AAC7A14000B03C4 /* Assets.xcassets */; };
 		9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */; };
-		9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */; };
 		9FF204DF2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */; };
 		9FF204E12AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */; };
 		9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */; };
@@ -31,6 +30,9 @@
 		9FF205192AAE653B000B03C4 /* SearchForLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */; };
 		9FF2051B2AAE654B000B03C4 /* SearchForLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */; };
 		9FF205222AAF2E17000B03C4 /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */; };
+		9FF2052A2AAF651E000B03C4 /* TemperaturePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */; };
+		9FF2052D2AAF703C000B03C4 /* WeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */; };
+		9FF2052F2AAF720E000B03C4 /* LocationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +60,6 @@
 		9FF204C92AAC7A14000B03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF204CB2AAC7A14000B03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FF204D02AAC7A14000B03C4 /* Morsy-WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherTests.swift; sourceTree = "<group>"; };
 		9FF204DA2AAC7A14000B03C4 /* Morsy-WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITests.swift; sourceTree = "<group>"; };
 		9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -79,6 +80,9 @@
 		9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchForLocationViewController.xib; sourceTree = "<group>"; };
 		9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationPresenter.swift; sourceTree = "<group>"; };
 		9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePresenterTests.swift; sourceTree = "<group>"; };
+		9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMock.swift; sourceTree = "<group>"; };
+		9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +149,8 @@
 		9FF204D32AAC7A14000B03C4 /* Morsy-WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */,
+				9FF205272AAF6500000B03C4 /* Module */,
+				9FF2052B2AAF6F68000B03C4 /* Mock */,
 			);
 			path = "Morsy-WeatherTests";
 			sourceTree = "<group>";
@@ -258,6 +263,31 @@
 				9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		9FF205272AAF6500000B03C4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205282AAF650C000B03C4 /* Temperature */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9FF205282AAF650C000B03C4 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+		9FF2052B2AAF6F68000B03C4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */,
+				9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,7 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */,
+				9FF2052F2AAF720E000B03C4 /* LocationServiceMock.swift in Sources */,
+				9FF2052D2AAF703C000B03C4 /* WeatherServiceMock.swift in Sources */,
+				9FF2052A2AAF651E000B03C4 /* TemperaturePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
