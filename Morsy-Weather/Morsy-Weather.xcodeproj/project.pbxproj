@@ -11,11 +11,28 @@
 		9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */; };
 		9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C62AAC7A14000B03C4 /* Assets.xcassets */; };
 		9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */; };
-		9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */; };
 		9FF204DF2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */; };
 		9FF204E12AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */; };
 		9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */; };
 		9FF204F22AAC7B85000B03C4 /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */; };
+		9FF204F52AAC896C000B03C4 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204F42AAC896C000B03C4 /* NetworkClient.swift */; };
+		9FF204F72AAC8991000B03C4 /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204F62AAC8991000B03C4 /* RequestConfiguration.swift */; };
+		9FF204FC2AAC8A1D000B03C4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204FB2AAC8A1D000B03C4 /* Constant.swift */; };
+		9FF204FE2AAC8F45000B03C4 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204FD2AAC8F45000B03C4 /* HTTPMethod.swift */; };
+		9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF204FF2AAC8F68000B03C4 /* NetworkError.swift */; };
+		9FF205072AAC94AC000B03C4 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205062AAC94AC000B03C4 /* Weather.swift */; };
+		9FF205092AAC94D9000B03C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205082AAC94D9000B03C4 /* Location.swift */; };
+		9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050B2AACA159000B03C4 /* WeatherService.swift */; };
+		9FF2050E2AACC26C000B03C4 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050D2AACC26C000B03C4 /* LocationService.swift */; };
+		9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */; };
+		9FF205132AAE0E4D000B03C4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */; };
+		9FF205182AAE653B000B03C4 /* SearchForLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */; };
+		9FF205192AAE653B000B03C4 /* SearchForLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */; };
+		9FF2051B2AAE654B000B03C4 /* SearchForLocationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */; };
+		9FF205222AAF2E17000B03C4 /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */; };
+		9FF2052A2AAF651E000B03C4 /* TemperaturePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */; };
+		9FF2052D2AAF703C000B03C4 /* WeatherServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */; };
+		9FF2052F2AAF720E000B03C4 /* LocationServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +60,29 @@
 		9FF204C92AAC7A14000B03C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FF204CB2AAC7A14000B03C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FF204D02AAC7A14000B03C4 /* Morsy-WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherTests.swift; sourceTree = "<group>"; };
 		9FF204DA2AAC7A14000B03C4 /* Morsy-WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Morsy-WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF204DE2AAC7A14000B03C4 /* Morsy_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITests.swift; sourceTree = "<group>"; };
 		9FF204E02AAC7A14000B03C4 /* Morsy_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Morsy_WeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureViewController.swift; sourceTree = "<group>"; };
 		9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TemperatureViewController.xib; sourceTree = "<group>"; };
+		9FF204F42AAC896C000B03C4 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		9FF204F62AAC8991000B03C4 /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		9FF204FB2AAC8A1D000B03C4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9FF204FD2AAC8F45000B03C4 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9FF204FF2AAC8F68000B03C4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		9FF205062AAC94AC000B03C4 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		9FF205082AAC94D9000B03C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		9FF2050B2AACA159000B03C4 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		9FF2050D2AACC26C000B03C4 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePresenter.swift; sourceTree = "<group>"; };
+		9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationViewController.swift; sourceTree = "<group>"; };
+		9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchForLocationViewController.xib; sourceTree = "<group>"; };
+		9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForLocationPresenter.swift; sourceTree = "<group>"; };
+		9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperaturePresenterTests.swift; sourceTree = "<group>"; };
+		9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceMock.swift; sourceTree = "<group>"; };
+		9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServiceMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +133,14 @@
 		9FF204BC2AAC7A13000B03C4 /* Morsy-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				9FF205112AAE0E3E000B03C4 /* Coordinator */,
 				9FF204ED2AAC7B31000B03C4 /* Module */,
-				9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */,
-				9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */,
-				9FF204C62AAC7A14000B03C4 /* Assets.xcassets */,
-				9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */,
+				9FF2050A2AACA126000B03C4 /* Service */,
+				9FF205042AAC9362000B03C4 /* Model */,
+				9FF204F32AAC8928000B03C4 /* Network */,
+				9FF204F82AAC89DA000B03C4 /* Helper */,
+				9FF205022AAC9235000B03C4 /* App */,
+				9FF205032AAC923E000B03C4 /* Resources */,
 				9FF204CB2AAC7A14000B03C4 /* Info.plist */,
 			);
 			path = "Morsy-Weather";
@@ -112,7 +149,8 @@
 		9FF204D32AAC7A14000B03C4 /* Morsy-WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				9FF204D42AAC7A14000B03C4 /* Morsy_WeatherTests.swift */,
+				9FF205272AAF6500000B03C4 /* Module */,
+				9FF2052B2AAF6F68000B03C4 /* Mock */,
 			);
 			path = "Morsy-WeatherTests";
 			sourceTree = "<group>";
@@ -130,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				9FF204EE2AAC7B3D000B03C4 /* Temperature */,
+				9FF205152AAE651B000B03C4 /* SearchForLocation */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -137,10 +176,118 @@
 		9FF204EE2AAC7B3D000B03C4 /* Temperature */ = {
 			isa = PBXGroup;
 			children = (
+				9FF2050F2AAE0B58000B03C4 /* TemperaturePresenter.swift */,
 				9FF204EF2AAC7B85000B03C4 /* TemperatureViewController.swift */,
 				9FF204F02AAC7B85000B03C4 /* TemperatureViewController.xib */,
 			);
 			path = Temperature;
+			sourceTree = "<group>";
+		};
+		9FF204F32AAC8928000B03C4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204F42AAC896C000B03C4 /* NetworkClient.swift */,
+				9FF204F62AAC8991000B03C4 /* RequestConfiguration.swift */,
+				9FF204FD2AAC8F45000B03C4 /* HTTPMethod.swift */,
+				9FF204FF2AAC8F68000B03C4 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FF204F82AAC89DA000B03C4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204FB2AAC8A1D000B03C4 /* Constant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9FF205022AAC9235000B03C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204BD2AAC7A13000B03C4 /* AppDelegate.swift */,
+				9FF204BF2AAC7A13000B03C4 /* SceneDelegate.swift */,
+				9FF204C82AAC7A14000B03C4 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9FF205032AAC923E000B03C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9FF204C62AAC7A14000B03C4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FF205042AAC9362000B03C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205062AAC94AC000B03C4 /* Weather.swift */,
+				9FF205082AAC94D9000B03C4 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FF2050A2AACA126000B03C4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2050B2AACA159000B03C4 /* WeatherService.swift */,
+				9FF2050D2AACC26C000B03C4 /* LocationService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9FF205112AAE0E3E000B03C4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9FF205152AAE651B000B03C4 /* SearchForLocation */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2051A2AAE654B000B03C4 /* SearchForLocationPresenter.swift */,
+				9FF205162AAE653B000B03C4 /* SearchForLocationViewController.swift */,
+				9FF205172AAE653B000B03C4 /* SearchForLocationViewController.xib */,
+				9FF2051C2AAF13ED000B03C4 /* Cell */,
+			);
+			path = SearchForLocation;
+			sourceTree = "<group>";
+		};
+		9FF2051C2AAF13ED000B03C4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205212AAF2E17000B03C4 /* LocationCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		9FF205272AAF6500000B03C4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205282AAF650C000B03C4 /* Temperature */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		9FF205282AAF650C000B03C4 /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				9FF205292AAF651E000B03C4 /* TemperaturePresenterTests.swift */,
+			);
+			path = Temperature;
+			sourceTree = "<group>";
+		};
+		9FF2052B2AAF6F68000B03C4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9FF2052C2AAF703C000B03C4 /* WeatherServiceMock.swift */,
+				9FF2052E2AAF720E000B03C4 /* LocationServiceMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF204CA2AAC7A14000B03C4 /* LaunchScreen.storyboard in Resources */,
+				9FF205192AAE653B000B03C4 /* SearchForLocationViewController.xib in Resources */,
 				9FF204F22AAC7B85000B03C4 /* TemperatureViewController.xib in Resources */,
 				9FF204C72AAC7A14000B03C4 /* Assets.xcassets in Resources */,
 			);
@@ -274,9 +422,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FF205102AAE0B58000B03C4 /* TemperaturePresenter.swift in Sources */,
 				9FF204BE2AAC7A13000B03C4 /* AppDelegate.swift in Sources */,
+				9FF2051B2AAE654B000B03C4 /* SearchForLocationPresenter.swift in Sources */,
+				9FF205002AAC8F68000B03C4 /* NetworkError.swift in Sources */,
+				9FF2050C2AACA159000B03C4 /* WeatherService.swift in Sources */,
+				9FF205092AAC94D9000B03C4 /* Location.swift in Sources */,
+				9FF205182AAE653B000B03C4 /* SearchForLocationViewController.swift in Sources */,
 				9FF204C02AAC7A13000B03C4 /* SceneDelegate.swift in Sources */,
+				9FF204FE2AAC8F45000B03C4 /* HTTPMethod.swift in Sources */,
+				9FF205072AAC94AC000B03C4 /* Weather.swift in Sources */,
+				9FF205222AAF2E17000B03C4 /* LocationCollectionViewCell.swift in Sources */,
 				9FF204F12AAC7B85000B03C4 /* TemperatureViewController.swift in Sources */,
+				9FF204F72AAC8991000B03C4 /* RequestConfiguration.swift in Sources */,
+				9FF204F52AAC896C000B03C4 /* NetworkClient.swift in Sources */,
+				9FF2050E2AACC26C000B03C4 /* LocationService.swift in Sources */,
+				9FF204FC2AAC8A1D000B03C4 /* Constant.swift in Sources */,
+				9FF205132AAE0E4D000B03C4 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +446,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF204D52AAC7A14000B03C4 /* Morsy_WeatherTests.swift in Sources */,
+				9FF2052F2AAF720E000B03C4 /* LocationServiceMock.swift in Sources */,
+				9FF2052D2AAF703C000B03C4 /* WeatherServiceMock.swift in Sources */,
+				9FF2052A2AAF651E000B03C4 /* TemperaturePresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
