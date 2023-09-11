@@ -8,6 +8,7 @@ I have decided to use **MVP-C** architecture, where:
 - **Coordinator:** is responsible for routing and navigation between different views.
 
 ## Folder Structure
+![Uploading Screenshot 2023-09-11 at 9.32.19 PM.png…]()
 
 ## Unit Test
 I did unit test for **TemperaturePresenter** as *an example*. To achieve this, I created mock implementations for **WeatherService** and **LocationService** to simulate both successful and failed responses.
