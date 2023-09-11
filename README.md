@@ -13,4 +13,6 @@ I have decided to use **MVP-C** architecture, where:
 ## Unit Test
 I did unit test for **TemperaturePresenter** as *an example*. To achieve this, I created mock implementations for **WeatherService** and **LocationService** to simulate both successful and failed responses.
 
+*If you have any questions, please do not hesitate to contact me.*
+
 
