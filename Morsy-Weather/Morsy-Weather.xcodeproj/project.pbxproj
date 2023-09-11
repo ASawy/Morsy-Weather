@@ -133,7 +133,7 @@
 		9FF204BC2AAC7A13000B03C4 /* Morsy-Weather */ = {
 			isa = PBXGroup;
 			children = (
-				9FF205112AAE0E3E000B03C4 /* Coordinators */,
+				9FF205112AAE0E3E000B03C4 /* Coordinator */,
 				9FF204ED2AAC7B31000B03C4 /* Module */,
 				9FF2050A2AACA126000B03C4 /* Service */,
 				9FF205042AAC9362000B03C4 /* Model */,
@@ -238,12 +238,12 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		9FF205112AAE0E3E000B03C4 /* Coordinators */ = {
+		9FF205112AAE0E3E000B03C4 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
 				9FF205122AAE0E4D000B03C4 /* ApplicationCoordinator.swift */,
 			);
-			path = Coordinators;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		9FF205152AAE651B000B03C4 /* SearchForLocation */ = {
